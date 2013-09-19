@@ -17,6 +17,7 @@
   		<meta http-equiv="x-dns-prefetch-control" content="off">
   		
   		<!-- Pre-fetch domains of assets requested later in the document -->
+  		<!-- See http://davidwalsh.name/html5-prefetch -->
   		<!-- <link rel="dns-prefetch" href="//example.tld"> -->
 		<!-- Pre-fetch assets globally-used assets (but *not* JavaScript) -->
 		<!-- <link rel="prefetch" href="asset.ext"> -->
