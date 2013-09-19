@@ -4,24 +4,27 @@
 <!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]--> 
 <!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]--> 
 <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-	<head>
-		<title><?php bloginfo( 'name' ); ?><?php wp_title( '|' ); ?></title>
-		<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Remove if you're not building a responsive site. (But then why would you do such a thing?) -->
-		
-		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
-		
-		<!-- Prevent some browsers (eg. Chrome) attempting to pre-fetch all URLs on your page -->
-  		<!-- See: http://www.buyog.com/code/?id=53 -->
-  		<meta http-equiv="x-dns-prefetch-control" content="off">
-  		
-  		<!-- Pre-fetch domains of assets requested later in the document -->
-  		<!-- See http://davidwalsh.name/html5-prefetch -->
-  		<!-- <link rel="dns-prefetch" href="//example.tld"> -->
-		<!-- Pre-fetch assets globally-used assets (but *not* JavaScript) -->
-		<!-- <link rel="prefetch" href="asset.ext"> -->
+<head>
+    
+  <title><?php bloginfo( 'name' ); ?><?php wp_title( '|' ); ?></title>
   
-		<?php wp_head(); ?>
-	</head>
-	<body <?php body_class(); ?>>
+  <meta charset="<?php bloginfo( 'charset' ); ?>" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Remove if you're not building a responsive site. (But then why would you do such a thing?) -->
+  
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
+  
+  <!-- Prevent some browsers (eg. Chrome) attempting to pre-fetch all URLs on your page -->
+  <!-- See: http://www.buyog.com/code/?id=53 -->
+  <meta http-equiv="x-dns-prefetch-control" content="off">
+  
+  <!-- Pre-fetch domains of assets requested later in the document -->
+  <!-- See http://davidwalsh.name/html5-prefetch -->
+  <!-- <link rel="dns-prefetch" href="//example.tld"> -->
+  <!-- Pre-fetch assets globally-used assets (but *not* JavaScript) -->
+  <!-- <link rel="prefetch" href="asset.ext"> -->
+  
+  <?php wp_head(); ?>
+    
+</head>
+<body <?php body_class(); ?>>
