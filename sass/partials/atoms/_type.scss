@@ -1,0 +1,23 @@
+/**
+ * Horizontal rules, extend `hr`.
+ * Demo: jsfiddle.net/inuitcss/L6GuZ
+ *
+ */
+.rule {
+  color: $color-text;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin-bottom: $basespace - 1px;
+  margin-bottom: (($basespace - 1px) / $basesize)*1rem;
+}
+
+// Dotted rules
+.rule--dotted{
+  border-bottom-style:dotted;
+}
+
+// Dashed rules
+.rule--dashed{
+  border-bottom-style:dashed;
+}

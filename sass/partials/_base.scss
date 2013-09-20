@@ -1,0 +1,31 @@
+// Imports, fixes and frameworks
+@import "compass"; 
+@import "breakpoint"; 
+@import "modular-scale";
+@import "normalize";
+@include normalize;
+
+// Helpers and modules
+@import "modules/all"; 
+
+// Base sizes
+$basesize: 16px; 
+$bs: $basesize; 
+$baseline: 1.5; 
+$bl: $baseline; 
+$basespace: $bs*$bl; 
+$ratio: fourth(); 
+
+// Base fonts
+$font-body: "helvetica neue", arial, sans-serif; 
+$font-heading: "helvetica neue", arial, sans-serif; 
+
+// Base (default) spacing
+%base-spacing { 
+	margin-bottom: $basespace; 
+	margin-bottom: ($basespace/$basesize)*1rem; 
+}
+h1, h2, h3, h4, h5, h6, hgroup, 
+ul, ol, dd, 
+p, figure, 
+pre, table, fieldset, hr { @extend %base-spacing; }

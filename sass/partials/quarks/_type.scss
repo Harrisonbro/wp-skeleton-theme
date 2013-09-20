@@ -1,0 +1,108 @@
+// Font size scale
+.giga, 
+%giga {
+	$fs: ms(8,1em); 
+	font-size: $fs; 
+	line-height: 7em*($bl/$fs); 
+}
+.mega, 
+%mega {
+	$fs: ms(7,1em); 
+	font-size: $fs; 
+	line-height: 5em*($bl/$fs); 
+}
+.kilo, 
+%kilo {
+	$fs: ms(6,1em); 
+	font-size: $fs; 
+	line-height: 4em*($bl/$fs); 
+}
+.alpha, 
+%alpha {
+	$fs: ms(5,1em); 
+	font-size: $fs; 
+	line-height: 3em*($bl/$fs); 
+}
+.beta, 
+%beta {
+	$fs: ms(4,1em); 
+	font-size: $fs; 
+	line-height: 3em*($bl/$fs); 
+}
+.gamma, 
+%gamma {
+	$fs: ms(3,1em); 
+	font-size: $fs; 
+	line-height: 2em*($bl/$fs); 
+}
+.delta, 
+%delta {
+	$fs: ms(2,1em); 
+	font-size: $fs; 
+	line-height: 2em*($bl/$fs); 
+}
+.epsilon, 
+%epsilon {
+	$fs: ms(1,1em); 
+	font-size: $fs; 
+	line-height: 1em*($bl/$fs); 
+}
+.zeta, 
+%zeta {
+	$fs: ms(0,1em); 
+	font-size: $fs; 
+	line-height: 1em*($bl/$fs); 
+}
+.milli, 
+%milli {
+	$fs: ms(-1,1em); 
+	font-size: $fs; 
+	line-height: 1em*($bl/$fs); 
+}
+.micro, 
+%micro {
+	$fs: ms(-2,1em); 
+	font-size: $fs; 
+	line-height: 1em*($bl/$fs); 
+}
+
+h1, h2, h3, 
+h4, h5, h6 {
+	font-family: $font-heading; 
+}
+h1 {
+	@extend .alpha; 
+}
+h2 {
+	@extend .beta; 	
+}
+h3 {
+	@extend .gamma; 
+}
+h4 {
+	@extend .delta; 
+}
+h5 {
+	@extend .epsilon; 
+}
+h6 {
+	@extend .zeta; 
+}
+small {
+	@extend .milli; 
+}
+
+blockquote {
+	font-style:italic;
+}
+
+hr {
+	border: 0;
+  height: 1px;
+  background: $color-grey;
+}
+
+abbr {
+  border-bottom: 1px dotted $color-grey;
+  cursor: help;
+}

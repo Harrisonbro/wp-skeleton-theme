@@ -1,5 +1,7 @@
 # Require any additional compass plugins here.
-require 'breakpoint'
+require 'breakpoint' # gem install breakpoint
+require 'modular-scale' # gem install modular-scale
+require 'normalize' # gem install compass-normalize-plugin
 
 # Set this to the root of your project when deployed:
 http_path = "/"

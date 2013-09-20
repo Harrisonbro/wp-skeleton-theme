@@ -1,0 +1,8 @@
+//!Media block
+.media,
+%media {
+  .body { overflow: hidden; _overflow:visible; zoom: 1; }
+  .img { float: left; margin-right: 1em; }
+  .img img { display: block; }
+  .img-alt { float: right; margin-left: 1em; margin-right: 0; }
+}
