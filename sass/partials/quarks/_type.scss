@@ -1,143 +1,155 @@
 // Font size scale
+
+@function giga-size() { @return ms(8,1em); }
 .giga, 
 %giga {
-	$fs: ms(8,1em); 
+	$fs: giga-size(); 
 	$lh: 1; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
+
+@function mega-size() { @return ms(7,1em); }
 .mega, 
 %mega {
-	$fs: ms(7,1em); 
+	$fs: mega-size(); 
 	$lh: 1; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
+
+@function kilo-size() { @return ms(6,1em); }
 .kilo, 
 %kilo {
-	$fs: ms(6,1em); 
+	$fs: kilo-size(); 
 	$lh: 1; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
+
+@function alpha-size() { @return ms(5,1em); }
 .alpha, 
 %alpha {
-	$fs: ms(5,1em); 
+	$fs: alpha-size(); 
 	$lh: 1; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
+
+@function beta-size() { @return ms(4,1em); }
 .beta, 
 %beta {
-	$fs: ms(4,1em); 
+	$fs: beta-size(); 
 	$lh: 1; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
+
+@function gamma-size() { @return ms(3,1em); }
 .gamma, 
 %gamma {
-	$fs: ms(3,1em); 
+	$fs: gamma-size(); 
 	$lh: 1; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
+
+@function delta-size() { @return ms(2,1em); }
 .delta, 
 %delta {
-	$fs: ms(2,1em); 
+	$fs: delta-size(); 
 	$lh: 1; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
+
+@function epsilon-size() { @return ms(1,1em); }
 .epsilon, 
 %epsilon {
-	$fs: ms(1,1em); 
+	$fs: epsilon-size(); 
 	$lh: 1; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
+
+@function zeta-size() { @return ms(0,1em); }
 .zeta, 
 %zeta {
-	$fs: ms(0,1em); 
+	$fs: zeta-size(); 
 	$lh: 1.49; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
+
+@function milli-size() { @return ms(-1,1em); }
 .milli, 
 %milli {
-	$fs: ms(-1,1em); 
+	$fs: milli-size(); 
 	$lh: 1; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
+
+@function micro-size() { @return ms(-2,1em); }
 .micro, 
 %micro {
-	$fs: ms(-2,1em); 
+	$fs: micro-size(); 
 	$lh: 1; 
 	font-size: $fs; 
 	line-height: $lh; 
 	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
-	position: relative; 
-	top: 0em/clear-units($fs);
 }
 
 h1, h2, h3, 
 h4, h5, h6 {
 	font-family: $font-heading; 
+	text-rendering: optimizeLegibility; 
+	color: $color-heading; 
 }
 h1 {
 	@extend .alpha; 
+	position: relative; 
+	top: 0em;
 }
 h2 {
-	@extend .beta; 	
+	@extend .beta; 
+	position: relative; 
+	top: 0em;	
 }
 h3 {
 	@extend .gamma; 
+	position: relative; 
+	top: 0em;
 }
 h4 {
 	@extend .delta; 
+	position: relative; 
+	top: 0em;
 }
 h5 {
 	@extend .epsilon; 
+	position: relative; 
+	top: 0em;
 }
 h6 {
 	@extend .zeta; 
+	position: relative; 
+	top: 0em;
 }
 small {
 	@extend .milli; 
-}
-
-blockquote {
-	font-style:italic;
+	position: relative; 
+	top: 0em;
 }
 
 hr {
@@ -149,4 +161,22 @@ hr {
 abbr {
   border-bottom: 1px dotted $color-grey;
   cursor: help;
+}
+
+// http://typeplate.com/#hyphenation
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+	// http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
+	@include hyphens(none);
 }
