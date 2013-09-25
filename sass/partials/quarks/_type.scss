@@ -2,68 +2,112 @@
 .giga, 
 %giga {
 	$fs: ms(8,1em); 
+	$lh: 1; 
 	font-size: $fs; 
-	line-height: 7em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 .mega, 
 %mega {
 	$fs: ms(7,1em); 
+	$lh: 1; 
 	font-size: $fs; 
-	line-height: 5em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 .kilo, 
 %kilo {
 	$fs: ms(6,1em); 
+	$lh: 1; 
 	font-size: $fs; 
-	line-height: 4em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 .alpha, 
 %alpha {
 	$fs: ms(5,1em); 
+	$lh: 1; 
 	font-size: $fs; 
-	line-height: 3em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 .beta, 
 %beta {
 	$fs: ms(4,1em); 
+	$lh: 1; 
 	font-size: $fs; 
-	line-height: 3em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 .gamma, 
 %gamma {
 	$fs: ms(3,1em); 
+	$lh: 1; 
 	font-size: $fs; 
-	line-height: 2em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 .delta, 
 %delta {
 	$fs: ms(2,1em); 
+	$lh: 1; 
 	font-size: $fs; 
-	line-height: 2em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 .epsilon, 
 %epsilon {
 	$fs: ms(1,1em); 
+	$lh: 1; 
 	font-size: $fs; 
-	line-height: 1em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 .zeta, 
 %zeta {
 	$fs: ms(0,1em); 
+	$lh: 1.49; 
 	font-size: $fs; 
-	line-height: 1em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 .milli, 
 %milli {
 	$fs: ms(-1,1em); 
+	$lh: 1; 
 	font-size: $fs; 
-	line-height: 1em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 .micro, 
 %micro {
 	$fs: ms(-2,1em); 
+	$lh: 1; 
 	font-size: $fs; 
-	line-height: 1em*($bl/$fs); 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	position: relative; 
+	top: 0em/clear-units($fs);
 }
 
 h1, h2, h3, 
