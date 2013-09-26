@@ -1,4 +1,17 @@
 /**
+ * Inline label form row
+ *
+ * Widths of the label and field elements 
+ * can/should be overwritten by grid system
+ * 
+ */
+.row--inline {
+  clear: both; 
+  label, input, select, textarea { display: inline; width: auto; }
+  label { margin-right: 0.5em; }
+}
+
+/**
  * Plain list
  */
 .plain-list {
@@ -89,3 +102,37 @@
 }
 
 } // @if $use-pagination
+
+@if $use-postfix == true {
+/**
+ * Postfix buttons to a form field.
+ * Useful for things like search
+ *
+ * <div class="postfix">
+ *   <input type="text" placeholder="enter location">
+ *   <button type="submit" class="button ss-search">postfix</button>
+ * </div>
+ * 
+ */
+.postfix {
+  @include clearfix; 
+  input, button { float: left; }
+  input { width: 60%; }
+  button,
+  input[type=submit] { 
+    width: 40%; 
+    margin: 0; 
+    line-height: 1em*$bl; 
+    padding-top: $vertical-padding-ems#{em}; 
+    padding-bottom: $vertical-padding-ems#{em};
+  }
+  & + small { width: 60%; }
+}
+.postfix-alt {
+	input { width: 57%; margin-right: 3%; }
+	button, 
+	input[type=submit] { width: auto; max-width: 40%; }
+	& + small { width: 57%; }
+}
+
+} // @if $use-postfix == true
