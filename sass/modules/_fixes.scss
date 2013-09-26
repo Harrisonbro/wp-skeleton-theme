@@ -7,3 +7,10 @@
     font-size:16px;
   }
 }
+
+img {
+  // Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+  vertical-align: middle; 
+  // Responsive design default
+  max-width: 100%; 
+}
