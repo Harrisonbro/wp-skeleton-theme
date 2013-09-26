@@ -1,0 +1,77 @@
+/**
+ * Plain list
+ */
+.plain-list {
+	list-style: none;
+  margin-left: 0;
+}
+
+/** 
+ * Horizontal list
+ */
+.h-list {
+  @extend .plain-list; 
+}
+.h-list > li,
+.h-list > li > a {
+  display: inline-block;
+ *display: inline;
+  zoom: 1;
+}
+.h-list > li {
+	// Remove spacing from inline-block
+	margin-right: -0.25em; 
+}
+
+@if $use-pagination == true {
+/**
+ * Pagination
+ */
+
+.pagination {
+	@extend .h-list; 
+	text-align: center; 
+
+  & > li {
+  	margin: 0 0.15em; 
+  }
+
+	a {
+		@include box-sizing(border-box); 
+		min-width: 1em*$bl; 
+		height: 1em*$bl; 
+		line-height: 1em*$bl; 
+		padding-left: 0.35em; 
+		padding-right: 0.35em; 
+		background: grey; 
+		color: white; 
+		text-decoration: none; 
+		&:hover {
+			background: black; 
+		}
+	}
+
+}
+
+.pagination__current a {
+	background: none; 
+	border: 1px dashed black; 
+	@include box-sizing(border-box); 
+	line-height: (1em*$bl) - (2em/clear-units($bs)); // take into account border
+	color: $color-text; 
+	cursor: default; 
+}
+
+.pagination__next a, 
+.pagination__previous a, 
+.pagination__last a, 
+.pagination__first a {
+	background: none; 
+	color: grey; 
+	&:hover {
+		background: none; 
+		color: black; 
+	}
+}
+
+} // @if $use-pagination
