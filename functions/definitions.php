@@ -1,8 +1,5 @@
 <?php 
  
-@include "_local_location.php";
-defined('SITE_ROOT')    ? null : define('SITE_ROOT', "...");
- 
 defined('THEME_PATH')   ? null : define('THEME_PATH', SITE_ROOT."/wp-content/themes/wp-skeleton-theme");
 defined('LIB_PATH')     ? null : define('LIB_PATH', THEME_PATH."/functions/lib");
 defined('HOME_URI')     ? null : define('HOME_URI', get_bloginfo('url'));
