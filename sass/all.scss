@@ -1,4 +1,14 @@
-// Modules and variables
+// Imports, fixes and frameworks
+@import "compass"; 
+@import "breakpoint"; 
+@import "modular-scale";
+@import "normalize";
+@include normalize;
+
+// Helpers and modules
+@import "modules/all"; 
+
+// Setup and variables
 @import "partials/base"; 
 
 // Atoms
