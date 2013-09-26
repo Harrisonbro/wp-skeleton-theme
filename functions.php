@@ -1,6 +1,6 @@
 <?php
 
-require_once( 'functions/utilities.php ');
+require_once( 'functions/utilities.php');
 require_once( 'functions/definitions.php' ); 
 require_once( 'functions/enqueues.php' ); 
 require_once( 'functions/theme-settings.php' ); 
