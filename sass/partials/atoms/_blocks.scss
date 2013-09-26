@@ -1,3 +1,4 @@
+@if $use-island == true {
 /**
  * Island object
  * Simple, boxed off content, as per: csswizardry.com/2011/10/the-island-object
@@ -14,3 +15,5 @@
 .islet { // smaller than .island
   padding : 0;
 }
+
+} // @if $use-island == true
