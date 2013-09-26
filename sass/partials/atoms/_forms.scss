@@ -1,3 +1,28 @@
+/**
+ * Inline label form row
+ *
+ * Widths of the label and field elements 
+ * can/should be overwritten by grid system
+ * 
+ */
+.row--inline {
+  clear: both; 
+  label, input, select, textarea { display: inline; width: auto; }
+  label { margin-right: 0.5em; }
+}
+
+
+@if $use-postfix == true {
+/**
+ * Postfix buttons to a form field.
+ * Useful for things like search
+ *
+ * <div class="postfix">
+ *   <input type="text" placeholder="enter location">
+ *   <button type="submit" class="button ss-search">postfix</button>
+ * </div>
+ * 
+ */
 .postfix {
   @include clearfix; 
   input, button { float: left; }
@@ -19,3 +44,4 @@
 	& + small { width: 57%; }
 }
 
+} // @if $use-postfix == true

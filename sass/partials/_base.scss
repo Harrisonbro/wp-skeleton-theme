@@ -32,4 +32,5 @@ p, figure, form,
 pre, table, fieldset, hr { @extend %base-spacing; }
 
 // Optional objects
-$use-pagination: true; 
+$use-pagination: false; 
+$use-postfix: false; 
