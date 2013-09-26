@@ -31,7 +31,8 @@ $cite-flourish: "— ";
 
 blockquote {
 	margin: 0; 
-	border-left: 2px solid red; 
+	border-left: 0.25em solid $color-grey; 
+	padding-left: 0.75em; 
 	&:last {
 		margin-bottom: 0; 
 	}
