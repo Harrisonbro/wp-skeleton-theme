@@ -5,9 +5,20 @@
 %giga {
 	$fs: giga-size(); 
 	$lh: 1; 
+	$baselines-bottom: 1; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 @function mega-size() { @return ms(7,1em); }
@@ -15,9 +26,20 @@
 %mega {
 	$fs: mega-size(); 
 	$lh: 1; 
+	$baselines-bottom: 1; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 @function kilo-size() { @return ms(6,1em); }
@@ -25,9 +47,20 @@
 %kilo {
 	$fs: kilo-size(); 
 	$lh: 1; 
+	$baselines-bottom: 1; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 @function alpha-size() { @return ms(5,1em); }
@@ -35,9 +68,20 @@
 %alpha {
 	$fs: alpha-size(); 
 	$lh: 1; 
+	$baselines-bottom: 1; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 1, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 @function beta-size() { @return ms(4,1em); }
@@ -45,9 +89,20 @@
 %beta {
 	$fs: beta-size(); 
 	$lh: 1; 
+	$baselines-bottom: 0; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 @function gamma-size() { @return ms(3,1em); }
@@ -55,9 +110,20 @@
 %gamma {
 	$fs: gamma-size(); 
 	$lh: 1; 
+	$baselines-bottom: 0; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 @function delta-size() { @return ms(2,1em); }
@@ -65,9 +131,20 @@
 %delta {
 	$fs: delta-size(); 
 	$lh: 1; 
+	$baselines-bottom: 0; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 @function epsilon-size() { @return ms(1,1em); }
@@ -75,9 +152,20 @@
 %epsilon {
 	$fs: epsilon-size(); 
 	$lh: 1; 
+	$baselines-bottom: 0; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 @function zeta-size() { @return ms(0,1em); }
@@ -85,9 +173,20 @@
 %zeta {
 	$fs: zeta-size(); 
 	$lh: 1.49; 
+	$baselines-bottom: 0; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 @function milli-size() { @return ms(-1,1em); }
@@ -95,9 +194,20 @@
 %milli {
 	$fs: milli-size(); 
 	$lh: $bl; 
+	$baselines-bottom: 0; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 @function micro-size() { @return ms(-2,1em); }
@@ -105,9 +215,62 @@
 %micro {
 	$fs: micro-size(); 
 	$lh: $bl; 
+	$baselines-bottom: 0; 
+	$baselines-top: 0; 
 	font-size: $fs; 
 	line-height: $lh; 
-	@include calculate-heading-margins($bs, $fs, $lh, $bl, 0, 0); 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
+}
+
+@function nano-size() { @return ms(-3,1em); }
+.nano, 
+%nano {
+	$fs: nano-size(); 
+	$lh: $bl; 
+	$baselines-bottom: 0; 
+	$baselines-top: 0; 
+	font-size: $fs; 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
+}
+
+@function pico-size() { @return ms(-4,1em); }
+.pico, 
+%pico {
+	$fs: pico-size(); 
+	$lh: $bl; 
+	$baselines-bottom: 0; 
+	$baselines-top: 0; 
+	font-size: $fs; 
+	line-height: $lh; 
+	@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top); 
+	&.l-push-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, 0); 
+	}
+	&.l-push-top {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom, $baselines-top + 2); 
+	}
+	&.l-push-top-bottom {
+		@include calculate-heading-margins($bs, $fs, $lh, $bl, $baselines-bottom + 1, $baselines-top + 2); 
+	}
 }
 
 h1, h2, h3, 
@@ -115,41 +278,29 @@ h4, h5, h6 {
 	font-family: $font-heading; 
 	text-rendering: optimizeLegibility; 
 	color: $color-heading; 
+	position: relative; 
+	top: 0em;
 }
 h1 {
 	@extend .alpha; 
-	position: relative; 
-	top: 0em;
 }
 h2 {
 	@extend .beta; 
-	position: relative; 
-	top: 0em;	
 }
 h3 {
 	@extend .gamma; 
-	position: relative; 
-	top: 0em;
 }
 h4 {
 	@extend .delta; 
-	position: relative; 
-	top: 0em;
 }
 h5 {
 	@extend .epsilon; 
-	position: relative; 
-	top: 0em;
 }
 h6 {
 	@extend .zeta; 
-	position: relative; 
-	top: 0em;
 }
 small {
 	@extend .milli; 
-	position: relative; 
-	top: 0em;
 }
 
 hr {
