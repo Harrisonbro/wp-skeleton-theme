@@ -17,8 +17,24 @@ $bottom-margin-ems: $bl - 2*$vertical-padding-ems - $border-width; // taking int
 
 	& + small {
 		display: block; 
-		position: realtive; 
+		position: relative; 
 		top: -$bottom-margin-ems / clear-units(milli-size())#{em}; 
+	}
+
+	&.field--error {
+		$border-size--error: 2; 
+		$border-width--error: $border-size--error*(2/clear-units($bs)); 
+	  border: $border-size--error#{px} solid $color-red; 
+	  $vertical-padding-ems--error: (0.5 - $border-width--error); 
+	  padding-top: $vertical-padding-ems--error#{em}; 
+	  padding-bottom: $vertical-padding-ems--error#{em}; 
+	  background: mix($color-red, white, 10%); 
+
+	  & + small.field-error-message {
+			color: white; 
+			background: $color-red; 
+			padding: 0 0.5em; 
+		}
 	}
 
 }
