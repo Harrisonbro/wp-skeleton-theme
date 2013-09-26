@@ -1,0 +1,21 @@
+.postfix {
+  @include clearfix; 
+  input, button { float: left; }
+  input { width: 60%; }
+  button,
+  input[type=submit] { 
+    width: 40%; 
+    margin: 0; 
+    line-height: 1em*$bl; 
+    padding-top: $vertical-padding-ems#{em}; 
+    padding-bottom: $vertical-padding-ems#{em};
+  }
+  & + small { width: 60%; }
+}
+.postfix-alt {
+	input { width: 57%; margin-right: 3%; }
+	button, 
+	input[type=submit] { width: auto; max-width: 40%; }
+	& + small { width: 57%; }
+}
+

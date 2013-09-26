@@ -28,5 +28,5 @@ $font-heading: "helvetica neue", arial, sans-serif;
 }
 h1, h2, h3, h4, h5, h6, hgroup, 
 ul, ol, dl, 
-p, figure, 
+p, figure, form, 
 pre, table, fieldset, hr { @extend %base-spacing; }
