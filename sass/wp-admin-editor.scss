@@ -1,0 +1,15 @@
+/**
+ * Styles for use in the WordPress post editor.
+ *
+ * Allows editor to somewhat represent the styles that will appear on the front-end.
+ */
+
+@import "partials/base"; 
+@import "partials/atoms/globals";
+@import "partials/atoms/type";
+@import "partials/atoms/quotes";
+@import "partials/atoms/lists";
+@import "partials/atoms/links";
+@import "partials/atoms/tables"; 
+
+* { font-family: 'proxima nova', 'helvetica neue', sans-serif; }
