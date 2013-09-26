@@ -15,7 +15,7 @@ $bottom-margin-ems: $bl - 2*$vertical-padding-ems - $border-width; // taking int
 	padding: $vertical-padding-ems#{em} 0.5em; // taking into account top and bottom borders
 	margin-bottom: $bottom-margin-ems#{em}; 
 
-	& + small {
+	& ~ small {
 		display: block; 
 		position: relative; 
 		top: -$bottom-margin-ems / clear-units(milli-size())#{em}; 
