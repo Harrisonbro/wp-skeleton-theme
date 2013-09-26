@@ -4,6 +4,10 @@
  * Allows editor to somewhat represent the styles that will appear on the front-end.
  */
 
+@import "compass"; 
+@import "breakpoint"; 
+@import "modular-scale";
+@import "modules/all"; 
 @import "partials/base"; 
 @import "partials/atoms/globals";
 @import "partials/atoms/type";
