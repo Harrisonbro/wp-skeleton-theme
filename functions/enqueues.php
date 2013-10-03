@@ -6,8 +6,8 @@ function AblosMedia_enqueuer() {
 	 * Theme JavaScript
 	 * wp_register_script( $handle, $src, $deps, $ver, $in_footer )
 	 */
-	// wp_register_script( 'script', THEME_JS.'/script.js', array( 'jquery' ) );
-	// wp_enqueue_script( 'script' );
+	wp_register_script( 'site', THEME_JS.'/site.js', array( 'jquery' ) );
+	wp_enqueue_site( 'script' );
 
 	/**
 	 * Theme CSS
