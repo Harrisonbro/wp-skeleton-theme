@@ -23,6 +23,11 @@
   <!-- <link rel="dns-prefetch" href="//example.tld"> -->
   <!-- Pre-fetch assets globally-used assets (but *not* JavaScript) -->
   <!-- <link rel="prefetch" href="asset.ext"> -->
+
+  <!-- Inline critical, blocking javascripts to reduce HTTP requests -->
+  <script>
+    <?php require(THEME_JS_PATH.'/modernizr.custom.js'); ?>
+  </script>
   
   <?php wp_head(); ?>
     

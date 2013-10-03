@@ -1,13 +1,13 @@
 <?php
 
-function AblosMedia_enqueuer() {
+function Ablos_Enqueuer() {
 
 	/**
 	 * Theme JavaScript
 	 * wp_register_script( $handle, $src, $deps, $ver, $in_footer )
 	 */
-	wp_register_script( 'site', THEME_JS.'/site.js', array( 'jquery' ) );
-	wp_enqueue_site( 'script' );
+	wp_register_script( 'site', THEME_JS.'/site.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'site' );
 
 	/**
 	 * Theme CSS
