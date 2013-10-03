@@ -8,6 +8,9 @@
 @import "breakpoint"; 
 @import "modular-scale";
 @import "modules/all"; 
+
+$basesize: 14px; 
+
 @import "partials/base"; 
 @import "partials/atoms/globals";
 @import "partials/atoms/type";
