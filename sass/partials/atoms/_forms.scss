@@ -43,6 +43,7 @@ textarea {
 	@extend %text-type-field;
 	$lines: 3; 
 	min-height: $lines*$bl + 2*$vertical-padding-ems + $border-width#{em};
+	resize: vertical; 
 }
 
 label { 
