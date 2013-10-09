@@ -9,3 +9,4 @@ require_once( 'functions/actions-filters.php' );
 require_once( 'functions/menus.php' ); 
 require_once( 'functions/custom-post-types.php' ); 
 require_once( 'functions/admin.php' ); 
+require_once( 'functions/metaboxes.php' ); 
