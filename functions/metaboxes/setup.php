@@ -7,7 +7,7 @@ include_once WP_CONTENT_DIR . '/wpalchemy/MediaAccess.php';
 if (is_admin()) add_action('admin_enqueue_scripts', 'metabox_style');
 
 function metabox_style() {
-	wp_enqueue_style('wpalchemy-metabox', THEME_URI.'/metaboxes/meta.css');
+	wp_enqueue_style('wpalchemy-metabox', THEME_URI.'/functions/metaboxes/meta.css');
 }
 
 $wpalchemy_media_access = new WPAlchemy_MediaAccess();
