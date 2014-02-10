@@ -4,4 +4,9 @@ body {
 	font-family: $font-body; 
 	line-height: $bl; 
 	color: $color-text; 
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern";
+	-webkit-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern=1";
 }
